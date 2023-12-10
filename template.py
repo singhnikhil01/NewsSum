@@ -6,7 +6,7 @@ import logging
 logging.basicConfig(
     level=logging.INFO,
     format='[%(asctime)s]: %(message)s',
-    filename='logfile.log'
+    # filename='logfile.log' no need to save these logs 
 ) 
 
 project_name = "TextSummerizer"
