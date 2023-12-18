@@ -151,3 +151,106 @@ Source-Age: 0
 [2023-12-19 02:19:31,874: INFO: main: >>>> stage Data Ingestion stage completed <<<<<<<<<<<<
 
  x===========x]
+[2023-12-19 03:04:26,371: INFO: common: YAML file 'config/config.yaml' loaded successfully]
+[2023-12-19 03:04:26,373: INFO: common: YAML file 'params.yaml' loaded successfully]
+[2023-12-19 03:04:26,375: INFO: common: Created directory at: artifacts]
+[2023-12-19 03:04:26,377: ERROR: 653836377: An unexpected error occurred: 'ConfigurationManager' object has no attribute 'get_data_transformation_config']
+[2023-12-19 03:07:40,360: INFO: common: YAML file 'config/config.yaml' loaded successfully]
+[2023-12-19 03:07:40,362: INFO: common: YAML file 'params.yaml' loaded successfully]
+[2023-12-19 03:07:40,364: INFO: common: Created directory at: artifacts]
+[2023-12-19 03:07:40,364: ERROR: 653836377: An unexpected error occurred: 'ConfigurationManager' object has no attribute 'get_data_transformation_config']
+[2023-12-19 03:07:57,753: INFO: common: YAML file 'config/config.yaml' loaded successfully]
+[2023-12-19 03:07:57,757: INFO: common: YAML file 'params.yaml' loaded successfully]
+[2023-12-19 03:07:57,758: INFO: common: Created directory at: artifacts]
+[2023-12-19 03:07:57,760: INFO: common: Created directory at: artifacts/data_transformtaion]
+[2023-12-19 03:08:03,629: ERROR: 3845853965: An unexpected error occurred: 'DataTransformationConfig' object has no attribute 'data']
+[2023-12-19 03:09:41,762: INFO: common: YAML file 'config/config.yaml' loaded successfully]
+[2023-12-19 03:09:41,765: INFO: common: YAML file 'params.yaml' loaded successfully]
+[2023-12-19 03:09:41,766: INFO: common: Created directory at: artifacts]
+[2023-12-19 03:09:41,767: INFO: common: Created directory at: artifacts/data_transformtaion]
+[2023-12-19 03:09:42,826: ERROR: 3845853965: An unexpected error occurred: Directory artifacts/data_ingestion/Textsummarizer_BCC_dataset is neither a `Dataset` directory nor a `DatasetDict` directory.]
+[2023-12-19 03:20:07,616: INFO: common: YAML file 'config/config.yaml' loaded successfully]
+[2023-12-19 03:20:07,618: INFO: common: YAML file 'params.yaml' loaded successfully]
+[2023-12-19 03:20:07,619: INFO: common: Created directory at: artifacts]
+[2023-12-19 03:20:07,620: INFO: common: Created directory at: artifacts/data_transformtaion]
+[2023-12-19 03:20:09,177: ERROR: 3845853965: An unexpected error occurred: Directory /home/devil/Text-Summerization-/artifacts/data_ingestion/Textsummarizer_BCC_dataset is neither a `Dataset` directory nor a `DatasetDict` directory.]
+[2023-12-19 03:25:18,648: INFO: common: YAML file 'config/config.yaml' loaded successfully]
+[2023-12-19 03:25:18,651: INFO: common: YAML file 'params.yaml' loaded successfully]
+[2023-12-19 03:25:18,652: INFO: common: Created directory at: artifacts]
+[2023-12-19 03:25:18,653: INFO: common: Created directory at: artifacts/data_transformtaion]
+[2023-12-19 03:25:20,231: ERROR: 3845853965: An unexpected error occurred: Directory artifacts/data_ingestion/Textsummarizer_BCC_dataset is neither a `Dataset` directory nor a `DatasetDict` directory.]
+[2023-12-19 03:33:20,641: INFO: common: YAML file 'config/config.yaml' loaded successfully]
+[2023-12-19 03:33:20,643: INFO: common: YAML file 'params.yaml' loaded successfully]
+[2023-12-19 03:33:20,644: INFO: common: Created directory at: artifacts]
+[2023-12-19 03:33:20,645: INFO: common: Created directory at: artifacts/data_transformtaion]
+[2023-12-19 03:33:20,646: ERROR: 3845853965: An unexpected error occurred: "'ConfigBox' object has no attribute 'data_path'"]
+[2023-12-19 03:36:55,333: INFO: common: YAML file 'config/config.yaml' loaded successfully]
+[2023-12-19 03:36:55,336: INFO: common: YAML file 'params.yaml' loaded successfully]
+[2023-12-19 03:36:55,337: INFO: common: Created directory at: artifacts]
+[2023-12-19 03:36:55,338: INFO: common: Created directory at: artifacts/data_transformtaion]
+[2023-12-19 03:36:59,785: ERROR: 3845853965: An unexpected error occurred: Unable to find '/home/devil/Text-Summerization-/artifacts/data_ingestion/Textsummarizer_BCC_dataset/train/test.csv']
+[2023-12-19 03:37:41,089: INFO: common: YAML file 'config/config.yaml' loaded successfully]
+[2023-12-19 03:37:41,093: INFO: common: YAML file 'params.yaml' loaded successfully]
+[2023-12-19 03:37:41,096: INFO: common: Created directory at: artifacts]
+[2023-12-19 03:37:41,098: INFO: common: Created directory at: artifacts/data_transformtaion]
+[2023-12-19 03:37:46,135: ERROR: 3845853965: An unexpected error occurred: 'dialogue']
+[2023-12-19 03:38:48,054: INFO: common: YAML file 'config/config.yaml' loaded successfully]
+[2023-12-19 03:38:48,058: INFO: common: YAML file 'params.yaml' loaded successfully]
+[2023-12-19 03:38:48,059: INFO: common: Created directory at: artifacts]
+[2023-12-19 03:38:48,060: INFO: common: Created directory at: artifacts/data_transformtaion]
+[2023-12-19 03:38:52,285: ERROR: 3845853965: An unexpected error occurred: 'summary']
+[2023-12-19 03:40:03,719: INFO: common: YAML file 'config/config.yaml' loaded successfully]
+[2023-12-19 03:40:03,723: INFO: common: YAML file 'params.yaml' loaded successfully]
+[2023-12-19 03:40:03,726: INFO: common: Created directory at: artifacts]
+[2023-12-19 03:40:03,730: INFO: common: Created directory at: artifacts/data_transformtaion]
+[2023-12-19 03:53:52,109: INFO: main: >>>> stage Data Ingestion stage started]
+[2023-12-19 03:53:52,128: INFO: common: YAML file 'config/config.yaml' loaded successfully]
+[2023-12-19 03:53:52,146: INFO: common: YAML file 'params.yaml' loaded successfully]
+[2023-12-19 03:53:52,146: INFO: common: Created directory at: artifacts]
+[2023-12-19 03:53:52,146: INFO: common: Created directory at: artifacts/data_ingestion]
+[2023-12-19 03:53:56,240: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 2921524
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "fbe918fb1572099ee34a7293bd45169b37f341131d960ece93912f42304abf63"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 2AF0:31561A:27A2E:44553:6580C6A0
+Accept-Ranges: bytes
+Date: Mon, 18 Dec 2023 22:24:34 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom4746-BOM
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1702938274.696243,VS0,VE855
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: e47e1ee4acdb4e566f0f3ef862149c0594170e73
+Expires: Mon, 18 Dec 2023 22:29:34 GMT
+Source-Age: 1
+
+]
+[2023-12-19 03:53:56,331: INFO: main: >>>> stage Data Ingestion stage completed <<<<<<<<<<<<
+
+ x===========x]
+[2023-12-19 03:53:56,332: INFO: main: >>>> stage Data validation stage started]
+[2023-12-19 03:53:56,336: INFO: common: YAML file 'config/config.yaml' loaded successfully]
+[2023-12-19 03:53:56,336: INFO: common: YAML file 'params.yaml' loaded successfully]
+[2023-12-19 03:53:56,336: INFO: common: Created directory at: artifacts]
+[2023-12-19 03:53:56,337: INFO: common: Created directory at: artifacts/data_validation]
+[2023-12-19 03:53:56,339: INFO: main: >>>> stage Data validation stage completed <<<<<<<<<<<<
+
+ x===========x]
+[2023-12-19 03:53:56,339: INFO: main: >>>> stage Data Transformation stage started]
+[2023-12-19 03:53:56,341: INFO: common: YAML file 'config/config.yaml' loaded successfully]
+[2023-12-19 03:53:56,342: INFO: common: YAML file 'params.yaml' loaded successfully]
+[2023-12-19 03:53:56,342: INFO: common: Created directory at: artifacts]
+[2023-12-19 03:53:56,342: INFO: common: Created directory at: artifacts/data_transformtaion]
+[2023-12-19 03:54:04,343: INFO: main: >>>> stage Data Transformation stage completed <<<<<<<<<<<<
+
+ x===========x]

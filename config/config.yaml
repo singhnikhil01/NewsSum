@@ -1,6 +1,5 @@
 artifacts_root: artifacts
 
-
 data_ingestion:
   root_dir: artifacts/data_ingestion
   source_URL: https://github.com/Singhsansar/Text-Summerization-/raw/main/BCC_dataset.zip
@@ -12,3 +11,10 @@ data_validation:
   root_dir: artifacts/data_validation 
   STATUS_FILE: artifacts/data_validation/status.txt
   ALL_REQUIRED_FILES: ["train","test","validation"]
+
+data_transformation: 
+  root_dir: artifacts/data_transformtaion
+  data_path_train: artifacts/data_ingestion/Textsummarizer_BCC_dataset/train/train.csv
+  data_path_test: artifacts/data_ingestion/Textsummarizer_BCC_dataset/test/test.csv
+  data_path_validation: artifacts/data_ingestion/Textsummarizer_BCC_dataset/validation/validation.csv
+  tokenizer_name: google/pegasus-cnn_dailymail 
