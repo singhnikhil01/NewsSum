@@ -7,10 +7,12 @@
 [2023-12-16 16:05:17,702: INFO: common: Created directory at: artifacts]
 [2023-12-16 16:05:17,704: INFO: common: Created directory at: artifacts/data_ingestion][2023-12-16 17:57:04,277: INFO: main: >>>> stage Data Ingestion stage started]
 [2023-12-16 17:57:04,279: INFO: common: YAML file 'config/config.yaml' loaded successfully]
-[2023-12-16 17:57:04,279: INFO: common: YAML file 'params.yaml' loaded successfully]
-[2023-12-16 17:57:04,279: INFO: common: Created directory at: artifacts]
-[2023-12-16 17:57:04,279: INFO: common: Created directory at: artifacts/data_ingestion]
-[2023-12-16 17:57:07,594: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+[2023-12-16 17:57:04,279: INFO: common: YAML file 'params.yaml' loaded successfully][2023-12-16 18:02:00,057: INFO: main: >>>> stage Data Ingestion stage started]
+[2023-12-16 18:02:00,058: INFO: common: YAML file 'config/config.yaml' loaded successfully]
+[2023-12-16 18:02:00,059: INFO: common: YAML file 'params.yaml' loaded successfully]
+[2023-12-16 18:02:00,059: INFO: common: Created directory at: artifacts]
+[2023-12-16 18:02:00,059: INFO: common: Created directory at: artifacts/data_ingestion]
+[2023-12-16 18:02:03,067: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
 Connection: close
 Content-Length: 2921524
 Cache-Control: max-age=300
@@ -21,22 +23,131 @@ Strict-Transport-Security: max-age=31536000
 X-Content-Type-Options: nosniff
 X-Frame-Options: deny
 X-XSS-Protection: 1; mode=block
-X-GitHub-Request-Id: A86A:16B32:8EEC95:9C5C91:657D97BC
+X-GitHub-Request-Id: 6F26:3C601D:AA2234:B99E23:657D989A
 Accept-Ranges: bytes
-Date: Sat, 16 Dec 2023 12:27:42 GMT
+Date: Sat, 16 Dec 2023 12:32:37 GMT
 Via: 1.1 varnish
-X-Served-By: cache-bom4738-BOM
-X-Cache: MISS
-X-Cache-Hits: 0
-X-Timer: S1702729662.822874,VS0,VE501
+X-Served-By: cache-bom4741-BOM
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1702729958.694341,VS0,VE67
 Vary: Authorization,Accept-Encoding,Origin
 Access-Control-Allow-Origin: *
 Cross-Origin-Resource-Policy: cross-origin
-X-Fastly-Request-ID: 0b2e20e39f1bf71b6c8481fb8cb2ba013ecabe00
-Expires: Sat, 16 Dec 2023 12:32:42 GMT
+X-Fastly-Request-ID: 31df8d0da68fc8adeb194062dc120acd5e87c820
+Expires: Sat, 16 Dec 2023 12:37:37 GMT
+Source-Age: 72
+
+]
+[2023-12-16 18:02:03,175: INFO: main: >>>> stage Data Ingestion stage completed <<<<<<<<<<<<
+
+ x===========x]
+[2023-12-19 01:37:09,852: INFO: common: YAML file 'config/config.yaml' loaded successfully]
+[2023-12-19 01:37:10,016: INFO: common: YAML file 'params.yaml' loaded successfully]
+[2023-12-19 01:37:10,055: INFO: common: Created directory at: artifacts]
+[2023-12-19 01:37:10,057: INFO: common: Created directory at: artifacts/data_validation]
+[2023-12-19 01:37:10,058: ERROR: 3322472700: An unexpected error occurred: "'ConfigBox' object has no attribute 'status_file'"]
+[2023-12-19 01:43:10,417: INFO: common: YAML file 'config/config.yaml' loaded successfully]
+[2023-12-19 01:43:10,418: INFO: common: YAML file 'params.yaml' loaded successfully]
+[2023-12-19 01:43:10,419: INFO: common: Created directory at: artifacts]
+[2023-12-19 01:43:10,421: INFO: common: Created directory at: artifacts/data_validation]
+[2023-12-19 01:43:10,422: ERROR: 3322472700: An unexpected error occurred: [Errno 2] No such file or directory: 'artifacts/data_ingection/Textsummarizer_BCC_dataset']
+[2023-12-19 01:46:10,552: INFO: common: YAML file 'config/config.yaml' loaded successfully]
+[2023-12-19 01:46:10,553: INFO: common: YAML file 'params.yaml' loaded successfully]
+[2023-12-19 01:46:10,554: INFO: common: Created directory at: artifacts]
+[2023-12-19 01:46:10,555: INFO: common: Created directory at: artifacts/data_validation]
+[2023-12-19 02:11:36,856: INFO: main: >>>> stage Data Ingestion stage started]
+[2023-12-19 02:11:36,881: INFO: common: YAML file 'config/config.yaml' loaded successfully]
+[2023-12-19 02:11:36,883: INFO: common: YAML file 'params.yaml' loaded successfully]
+[2023-12-19 02:11:36,884: INFO: common: Created directory at: artifacts]
+[2023-12-19 02:11:36,885: INFO: common: Created directory at: artifacts/data_ingestion]
+[2023-12-19 02:11:41,266: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 2921524
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "fbe918fb1572099ee34a7293bd45169b37f341131d960ece93912f42304abf63"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 7174:29B605:BBF71:D3CD5:6580AEA7
+Accept-Ranges: bytes
+Date: Mon, 18 Dec 2023 20:42:19 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom4735-BOM
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1702932138.336868,VS0,VE1138
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 7d0f42f8b0c4131ed139cae83fc0d213b06d2702
+Expires: Mon, 18 Dec 2023 20:47:19 GMT
+Source-Age: 1
+
+]
+[2023-12-19 02:11:41,469: INFO: main: >>>> stage Data Ingestion stage completed <<<<<<<<<<<<
+
+ x===========x]
+[2023-12-19 02:11:41,469: INFO: main: >>>> stage Data Ingestion stage started]
+[2023-12-19 02:11:41,470: INFO: common: YAML file 'config/config.yaml' loaded successfully]
+[2023-12-19 02:11:41,471: INFO: common: YAML file 'params.yaml' loaded successfully]
+[2023-12-19 02:11:41,471: INFO: common: Created directory at: artifacts]
+[2023-12-19 02:11:41,471: INFO: common: Created directory at: artifacts/data_ingestion]
+[2023-12-19 02:11:41,471: ERROR: stage_02_data_validation: An unexpected error occurred: 'DataIngestionConfig' object has no attribute 'ALL_REQUIRED_FILES']
+[2023-12-19 02:11:41,471: ERROR: main: 'DataIngestionConfig' object has no attribute 'ALL_REQUIRED_FILES']
+Traceback (most recent call last):
+  File "main.py", line 25, in <module>
+    data_validation.main()
+  File "/home/devil/Text-Summerization-/src/TextSummerizer/pipeline/stage_02_data_validation.py", line 16, in main
+    data_validation.validate_all_files_exists()
+  File "/home/devil/Text-Summerization-/src/TextSummerizer/components/data_validation.py", line 28, in validate_all_files_exists
+    raise e
+  File "/home/devil/Text-Summerization-/src/TextSummerizer/components/data_validation.py", line 16, in validate_all_files_exists
+    if file not in self.config.ALL_REQUIRED_FILES:
+AttributeError: 'DataIngestionConfig' object has no attribute 'ALL_REQUIRED_FILES'
+[2023-12-19 02:19:28,281: INFO: main: >>>> stage Data Ingestion stage started]
+[2023-12-19 02:19:28,282: INFO: common: YAML file 'config/config.yaml' loaded successfully]
+[2023-12-19 02:19:28,283: INFO: common: YAML file 'params.yaml' loaded successfully]
+[2023-12-19 02:19:28,283: INFO: common: Created directory at: artifacts]
+[2023-12-19 02:19:28,283: INFO: common: Created directory at: artifacts/data_ingestion]
+[2023-12-19 02:19:31,793: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 2921524
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "fbe918fb1572099ee34a7293bd45169b37f341131d960ece93912f42304abf63"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 7174:29B605:BBF71:D3CD5:6580AEA7
+Accept-Ranges: bytes
+Date: Mon, 18 Dec 2023 20:50:09 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom4751-BOM
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1702932610.574434,VS0,VE321
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: bedf39ac1861ef312f1cd7576a97ad18716df3fd
+Expires: Mon, 18 Dec 2023 20:55:09 GMT
 Source-Age: 0
 
 ]
-[2023-12-16 17:57:07,675: INFO: main: >>>> stage Data Ingestion stage completed <<<<<<<<<<<<
+[2023-12-19 02:19:31,871: INFO: main: >>>> stage Data Ingestion stage completed <<<<<<<<<<<<
+
+ x===========x]
+[2023-12-19 02:19:31,871: INFO: main: >>>> stage Data Ingestion stage started]
+[2023-12-19 02:19:31,873: INFO: common: YAML file 'config/config.yaml' loaded successfully]
+[2023-12-19 02:19:31,873: INFO: common: YAML file 'params.yaml' loaded successfully]
+[2023-12-19 02:19:31,873: INFO: common: Created directory at: artifacts]
+[2023-12-19 02:19:31,874: INFO: common: Created directory at: artifacts/data_validation]
+[2023-12-19 02:19:31,874: INFO: main: >>>> stage Data Ingestion stage completed <<<<<<<<<<<<
 
  x===========x]
