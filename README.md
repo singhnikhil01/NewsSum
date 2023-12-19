@@ -2,6 +2,9 @@
 
 ## workflows 
 
+- save the URI: 199722361120.dkr.ecr.eu-north-1.amazonaws.com/textsummarization
+
+
 1. update config.yaml
 2. update params.yaml
 3. update entiry
