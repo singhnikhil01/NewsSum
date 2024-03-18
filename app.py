@@ -35,7 +35,9 @@ async def predict_route(text):
     try:
 
         obj = PredictionPipeline()
+        print(text)
         text = obj.predict(text)
+        print(text)
         return text
     except Exception as e:
         raise e

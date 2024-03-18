@@ -5,7 +5,6 @@ import torch
 import pandas as pd 
 from tqdm import tqdm
 
-
 class ModelEvaluation:
     def __init__(self, config):
         self.config = config
@@ -20,8 +19,8 @@ class ModelEvaluation:
 
     def calculate_metric_on_test_ds(self, dataset, metric, model, tokenizer,
                                     batch_size=16, device='cuda' if torch.cuda.is_available() else "cpu",
-                                    column_text="article",
-                                    column_summary="highlights"):
+                                    column_text="Text",
+                                    column_summary="Summary"):
         article_batches = list(self.generate_batch_sized_chunks(dataset[column_text], batch_size))
         target_batches = list(self.generate_batch_sized_chunks(dataset[column_summary], batch_size))
 
@@ -41,7 +40,6 @@ class ModelEvaluation:
                                  for s in summaries]
 
             decoded_summaries = [d.replace("", " ") for d in decoded_summaries]
-
             metric.add_batch(predictions=decoded_summaries, references=target_batch)
 
         score = metric.compute()
@@ -51,15 +49,15 @@ class ModelEvaluation:
         device = 'cuda' if torch.cuda.is_available() else "cpu"
         tokenizer = AutoTokenizer.from_pretrained(self.config.tokenizer_path)
         model_pegasus = AutoModelForSeq2SeqLM.from_pretrained(self.config.model_path).to(device)
-
-        dataset_summarizer_pt = load_from_disk(self.config.data_path)
+        dataset = load_from_disk(self.config.data_path)
+        
         rouge_names = ['rouge1', 'rouge2', 'rougeL', 'rougeLsum']
         rouge_metric = load_metric('rouge')
 
-        score = self.calculate_metric_on_test_ds(dataset_summarizer_pt['test'][:10], rouge_metric, model_pegasus,
-                                                 tokenizer, batch_size=2, column_text='dialogue', column_summary='summary')
+        score = self.calculate_metric_on_test_ds(dataset['test'][:10], rouge_metric, model_pegasus,
+                                                 tokenizer, batch_size=2, column_text='Text', column_summary='Summary')
 
         rouge_dict = dict((rn, score[rn].mid.fmeasure) for rn in rouge_names)
-
         df = pd.DataFrame(rouge_dict, index=['pegasus'])
+        
         df.to_csv(self.config.metric_file_name, index=False)
