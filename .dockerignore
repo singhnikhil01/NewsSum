@@ -1,0 +1,6 @@
+research/
+template.py
+.venv/
+.github/
+artifacts/*
+logs/*
