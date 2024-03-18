@@ -2,12 +2,10 @@ import os
 from box.exceptions import BoxValueError
 import yaml
 from TextSummerizer.logging import logger
-from ensure import ensure_annotations
 from box import ConfigBox
 from pathlib import Path
 from typing import List
 
-@ensure_annotations
 def read_yaml(path_to_yaml: Path) -> ConfigBox:
     """Reads yaml file and returns a ConfigBox.
 
@@ -30,8 +28,6 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
     except Exception as e:
         raise ValueError(f"Error loading YAML file '{path_to_yaml}': {e}")
 
-
-@ensure_annotations
 def create_directories(path_to_directories: list, verbose=True):
     """Create a list of directories.
 
@@ -45,7 +41,6 @@ def create_directories(path_to_directories: list, verbose=True):
             logger.info(f"Created directory at: {path}")
 
 
-@ensure_annotations
 def get_size(path: Path) -> str:
     """Get the size of a file in KB.
 
