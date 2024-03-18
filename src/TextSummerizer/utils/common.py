@@ -1,54 +1,64 @@
-import os
-from box.exceptions import BoxValueError
-import yaml
+from TextSummerizer.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
+from TextSummerizer.pipeline.stage_02_data_validation import DataValidationTrainingPipeline
+from TextSummerizer.pipeline.stage_03_data_transformation import DataTransformationTrainingPipeline
+from TextSummerizer.pipeline.stage_04_model_trainer import ModelTrainerTrainingPipeline
+from TextSummerizer.pipeline.stage_05_model_evaluation import ModelEvaluationTrainingPipeline
 from TextSummerizer.logging import logger
-from box import ConfigBox
-from pathlib import Path
-from typing import List
 
-def read_yaml(path_to_yaml: Path) -> ConfigBox:
-    """Reads yaml file and returns a ConfigBox.
+STAGE_NAME = "Data Ingestion stage"
+try: 
+    logger.info(f">>>> stage {STAGE_NAME} started")
+    data_ingestion = DataIngestionTrainingPipeline()
+    data_ingestion.main()
+    logger.info(f">>>> stage {STAGE_NAME} completed <<<<<<<<<<<<\n\n x===========x")
 
-    Args:
-        path_to_yaml (Path): Path to the YAML file.
+except Exception as e : 
+    logger.exception(e)
+    raise e 
 
-    Raises:
-        ValueError: If the YAML file is empty or cannot be loaded.
-
-    Returns:
-        ConfigBox: ConfigBox containing the YAML content.
-    """
-    try:
-        with open(path_to_yaml, 'r') as yaml_file:
-            content = yaml.safe_load(yaml_file)
-            if content is None:
-                raise ValueError("YAML file is empty")
-            logger.info(f"YAML file '{path_to_yaml}' loaded successfully")
-            return ConfigBox(content)
-    except Exception as e:
-        raise ValueError(f"Error loading YAML file '{path_to_yaml}': {e}")
-
-def create_directories(path_to_directories: list, verbose=True):
-    """Create a list of directories.
-
-    Args:
-        path_to_directories (list): List of paths of directories.
-        verbose (bool, optional): Print log messages for created directories. Defaults to True.
-    """
-    for path in path_to_directories:
-        os.makedirs(path, exist_ok=True)
-        if verbose:
-            logger.info(f"Created directory at: {path}")
+STAGE_NAME = "Data validation stage"
+try: 
+    logger.info(f">>>> stage {STAGE_NAME} started")
+    data_validation = DataValidationTrainingPipeline()
+    data_validation.main()
+    logger.info(f">>>> stage {STAGE_NAME} completed <<<<<<<<<<<<\n\n x===========x")
+except Exception as e : 
+    logger.exception(e)
+    raise e 
 
 
-def get_size(path: Path) -> str:
-    """Get the size of a file in KB.
+STAGE_NAME = "Data Transformation stage"
+try: 
+    logger.info(f">>>> stage {STAGE_NAME} started")
+    data_transoformation = DataTransformationTrainingPipeline()
+    data_transoformation.main()
+    logger.info(f">>>> stage {STAGE_NAME} completed <<<<<<<<<<<<\n\n x===========x")
 
-    Args:
-        path (Path): Path of the file.
+except Exception as e : 
+    logger.exception(e)
+    raise e 
 
-    Returns:
-        str: Size in KB.
-    """
-    size_in_kb = round(os.path.getsize(path) / 1024)
-    return f"~ {size_in_kb} KB"
+
+
+STAGE_NAME = "Model Trainer stage"
+
+try: 
+    logger.info(f">>>> stage {STAGE_NAME} started")
+    model_trainer = ModelTrainerTrainingPipeline()
+    model_trainer.main()
+    logger.info(f">>>> stage {STAGE_NAME} completed <<<<<<<<<<<<\n\n x===========x")
+
+except Exception as e : 
+    logger.exception(e)
+    raise e 
+
+STAGE_NAME = "Model Evaluation stage"
+try: 
+    logger.info(f">>>> stage {STAGE_NAME} started")
+    model_trainer =  ModelEvaluationTrainingPipeline()
+    model_trainer.main()
+    logger.info(f">>>> stage {STAGE_NAME} completed <<<<<<<<<<<<\n\n x===========x")
+
+except Exception as e : 
+    logger.exception(e)
+    raise e 

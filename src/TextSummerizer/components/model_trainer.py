@@ -24,7 +24,7 @@ class ModelTrainer:
             per_device_eval_batch_size= self.config.per_device_train_batch_size,
             weight_decay=self.config.weight_decay,logging_steps=self.config.logging_step,
             evaluation_strategy=self.config.evaluation_strategy,eval_steps=self.config.eval_steps,
-            save_steps=self.config.save_steps, gradient_accumulation_steps=self.config.gradient_accumulation_steps
+            save_steps=int(float(self.config.save_steps)), gradient_accumulation_steps=self.config.gradient_accumulation_steps
         )
 
         trainer = Trainer(model=model_pegasus, args= training_args, 
@@ -34,5 +34,5 @@ class ModelTrainer:
         
         trainer.train()
 
-        model_pegasus.save_pretrained(os.path.join(self.config.root_dir,"pegasus-bcc-model"))
+        model_pegasus.save_pretrained(os.path.join(self.config.root_dir,"facebook-bcc-model"))
         tokenizer.save_pretrained(os.path.join(os.path.join(self.config.root_dir,"tokenizer")))
