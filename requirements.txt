@@ -1,4 +1,5 @@
 transformers
+transformers[torch]
 transformers[sentencepiece]
 dataset
 sacrebleu
@@ -9,9 +10,9 @@ nltk
 tqdm
 PyYAML
 torch
+datasets
 notebook
 boto3 
-ensure
 mypy-boto3-s3
 python-box==6.0.2
 ensure==1.0.1
